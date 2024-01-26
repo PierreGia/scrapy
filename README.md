@@ -8,9 +8,11 @@ apres ca il faut créer une db mongodb si vou avez mongodb d'installer sur votre
 
 Ensuite il faut aller dans le fichier setting.py qui est dans le dossier quotes_scraper pour modifer la conexion a la db mongodb
 
-apres ca il faut utiliser cd quotes_scraper pour aller dans le dossier
+il faut aller dans le fichier quotes_spider.py pour modifier les informations relative a l'envoi du mail donc dans le fichier a la ligne 15 au niveau de username pour mettre votre adrresse mail a vous, ensuite juste en dessous il faut changer le password pour votre mot de passe a vous pour cela aller dans les parametres de votre compte google ensuite aller dans securité puis validation en deux etapes puis mot de passe d'application puis enfin créer une nouvelle application pour avoir le mot de passe.
 
-ensuite une fois dans le dossier il faut utiliser la commande scrapy crawl quotes -L WARNING pour executer le scraper cela va créer une collection appelé quotes dans la db mongodb si vous avez mongodb d'installer mais aussi créer un fichier json contenant la collection quotes
+apres ca il faut utiliser la commande cd quotes_scraper pour aller dans le dossier
+
+ensuite une fois dans le dossier il faut utiliser la commande scrapy crawl quotes -L WARNING pour executer le scraper cela va créer une collection appelé quotes dans la db mongodb si vous avez mongodb d'installer mais aussi créer un fichier json contenant la collection quotes et cela envera un mail disant que le scraping a bien eu lieu.
 
 ensuite dans le fichier app.py de l'api flask a la racine du projet il faut changer le chemin du fichier json pour qu'il corresponde a la ou il est dans le dossier.
 
