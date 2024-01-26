@@ -1,0 +1,4 @@
+#!C:\Users\33761\OneDrive\Bureau\scrapy\.venv\Scripts\python.exe
+
+from splash.server import main
+main()
