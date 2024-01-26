@@ -1,3 +1,5 @@
+Projet scrapy
+
 apres avoir créer un clone du projet certaine etapes sont a réalisées pour que tout fonctionne.
 
 En premier lieu il faut se placer dans l'environement virtuel avec la commande : .venv/Scripts/activate
