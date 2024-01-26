@@ -31,7 +31,7 @@ class QuotesSpider(scrapy.Spider):
             existing_quote = database.quotes.find_one({'text': text, 'author': author})
 
             if existing_quote:
-                # Si le document existe, mettez à jour les tags (ou d'autres champs selon vos besoins)
+                # Si le document existe, met à jour 
                 database.quotes.update_one(
                     {'text': text, 'author': author},
                     {'$set': {'tags': tags}}
