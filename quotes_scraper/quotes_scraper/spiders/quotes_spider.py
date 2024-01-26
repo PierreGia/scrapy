@@ -37,7 +37,6 @@ class QuotesSpider(scrapy.Spider):
                     {'$set': {'tags': tags}}
                 )
                 print(f'Document mis à jour : Text: {text}, Author: {author}, Tags: {tags}')
-
             else:
                 # Si le document n'existe pas, insérez-le dans la base de données
                 database.quotes.insert_one({
@@ -60,7 +59,13 @@ class QuotesSpider(scrapy.Spider):
             yield scrapy.Request(url=next_page_url, callback=self.parse)
         else:
             # Toutes les pages ont été traitées, générer un fichier JSON
-            self.generate_json_file()
+            if not getattr(self, 'json_generated', False):
+                self.generate_json_file()
+                self.json_generated = True
+                self.send()
+
+    def send(self):
+        self.email.send(subject="sujet", sender="pierregia13@gmail.com", receivers=['pierregia13@gmail.com'], text="le scrapping abien eu lieu")
 
     def generate_json_file(self):
         # Connexion à MongoDB
