@@ -65,7 +65,7 @@ class QuotesSpider(scrapy.Spider):
                 self.send()
 
     def send(self):
-        self.email.send(subject="sujet", sender="pierregia13@gmail.com", receivers=['pierregia13@gmail.com'], text="le scrapping abien eu lieu")
+        self.email.send(subject="sujet", sender="pierregia13@gmail.com", receivers=['pierregia13@gmail.com'], text="le scrapping a bien eu lieu")
 
     def generate_json_file(self):
         # Connexion à MongoDB
