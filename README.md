@@ -1,4 +1,4 @@
-Projet scrapy
+Projet scrapy mongodb api flask
 
 apres avoir créer un clone du projet certaine etapes sont a réalisées pour que tout fonctionne.
 
