@@ -19,3 +19,5 @@ ensuite dans le fichier app.py de l'api flask a la racine du projet il faut chan
 apres ca il faut utiliser la utiliser la commande flask --app app run pour lancer l'api
 
 utiliser la commande streamlit run streamlit_app.py pour lancer l'app streamlit
+
+j'ai créer different test avec pytest le premier est pour l'api flask pour le tester il faut se placer dans le dossier tests avec la commande cd tests une fois a l'interieur il faut utiliser la commande pytest test_flask.py pour lancer le test
