@@ -19,6 +19,6 @@ def main():
     st.write(f"Author: {quote['author']}")
     st.write(f"Tags: {', '.join(quote['tags'])}")
 
-# Exécutez l'application Streamlit
+
 if __name__ == '__main__':
     main()
