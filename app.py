@@ -13,7 +13,7 @@ CORS(app)
 
 
 # Charger le fichier JSON
-with open(r'C:\Users\33761\OneDrive\Bureau\scrapy\quotes_database.quotes.json', 'r', encoding='utf-8') as file:
+with open(r'scrapy\quotes_database.quotes.json', 'r', encoding='utf-8') as file:
     quotes_data = json.load(file)
 
 
