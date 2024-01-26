@@ -1,4 +1,4 @@
-Projet scrapy mongodb api flask streamlit
+Projet scrapy mongodb api flask streamlit pour les citations
  
 apres avoir créer un clone du projet certaine etapes sont a réalisées pour que tout fonctionne.
 
